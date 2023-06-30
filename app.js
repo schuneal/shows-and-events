@@ -11,7 +11,7 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
-console.log("====");
+
 const { test_timeout = 160000 } = server;
 app.use(timeoutTest({ timeout: test_timeout, check_auth: false }));
 
